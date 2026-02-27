@@ -1,0 +1,60 @@
+---
+layout: base.njk
+pageTitle: "Services"
+pageDesc: "L&M Automotive Performance offers engine, brakes, exhaust, diagnostics, race prepping, electrical, clutch, and cooling system services in Stellenbosch."
+activePage: services
+---
+
+<!-- ===================== PAGE HERO ===================== -->
+<section class="page-hero">
+    <div class="container">
+        <span class="label">What We Offer</span>
+        <h1>Our Services</h1>
+        <p>Comprehensive automotive care across 8 specialist service categories.</p>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span class="sep">/</span>
+            <span class="current">Services</span>
+        </nav>
+    </div>
+</section>
+
+<!-- ===================== SERVICES LIST ===================== -->
+<section class="section">
+    <div class="container">
+        <div class="section-header animate">
+            <span class="label">Full Service Workshop</span>
+            <h2>{{ services.intro_title }}</h2>
+            <div class="divider"></div>
+            <p>{{ services.intro_text }}</p>
+        </div>
+        <div class="services-full-grid">
+            {% for service in services.items %}
+            {% set delay = (loop.index0 % 2) + 1 %}
+            <div class="service-full-card animate animate-delay-{{ delay }}">
+                <div class="service-full-icon">
+                    <i class="{{ service.icon }}"></i>
+                </div>
+                <div class="service-full-content">
+                    <h3>{{ service.name }}</h3>
+                    <p>{{ service.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- ===================== CTA BANNER ===================== -->
+<div class="cta-banner">
+    <div class="container">
+        <h2>Not Sure What Your Vehicle Needs?</h2>
+        <p>Bring it in for a diagnostic check-up and let our experts identify any issues before they become expensive problems.</p>
+        <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+            <a href="/contact/" class="btn btn-red"><i class="fas fa-calendar-check"></i> Book a Service</a>
+            <a href="tel:{{ site.phone | replace(' ', '') }}" class="btn btn-outline"><i class="fas fa-phone"></i> Call Us Now</a>
+        </div>
+    </div>
+</div>
+
+{% include "infobar.njk" %}

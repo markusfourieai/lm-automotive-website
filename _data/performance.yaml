@@ -1,0 +1,42 @@
+intro_p1: "At L&M Automotive Performance, performance isn't just a department — it's in our DNA. We've been preparing vehicles for competition and high-performance street use for years, building a reputation for delivering results that speak for themselves."
+intro_p2: "Whether you're entering your first track day, competing in a regional championship, or simply want to unlock more from your street car, our performance team has the expertise and equipment to get the job done right."
+intro_p3: "We work across a wide range of motorsport disciplines — circuit racing, drag racing, hillclimb, and off-road — and we're experienced in MSA regulation compliance to ensure your build passes scrutineering."
+
+services:
+  - title: "Engine Performance"
+    icon: "fas fa-cogs"
+    desc: "Power upgrades for naturally aspirated and forced induction engines. Head porting and polishing, camshaft upgrades, induction kits, and full engine builds optimised for maximum power output. [Placeholder — update with specific engine work offered.]"
+
+  - title: "Suspension & Handling"
+    icon: "fas fa-car-side"
+    desc: "Coilover installations, lowering springs, adjustable dampers, sway bar upgrades, camber kits, and full four-wheel alignment. We set up your suspension geometry for the exact balance of road comfort and track grip. [Placeholder — update with specific suspension work offered.]"
+
+  - title: "Safety & Roll Cages"
+    icon: "fas fa-shield-alt"
+    desc: "Full roll cage fabrication and installation, fire suppression systems, racing harness mounting, and complete MSA safety compliance preparation. Safety is always the first priority in any motorsport build. [Placeholder — update with specific safety equipment work offered.]"
+
+  - title: "Exhaust & Induction"
+    icon: "fas fa-wind"
+    desc: "Custom performance exhaust fabrication, headers, free-flow sports catalysts, and high-flow induction systems. Optimised for maximum power gains with the right sound to match. [Placeholder — update with specific exhaust/induction services offered.]"
+
+  - title: "Performance Braking"
+    icon: "fas fa-circle-stop"
+    desc: "Big brake kit installations, braided brake lines, high-temperature brake fluid, performance pads and rotors. We ensure your stopping power matches your engine's performance — critical for both safety and lap times. [Placeholder — update with specific braking upgrades offered.]"
+
+  - title: "ECU & Tuning"
+    icon: "fas fa-microchip"
+    desc: "Engine management tuning and remapping to unlock the full potential of your vehicle's power plant. Custom maps for power, torque, and fuel efficiency on both road and race applications. [Placeholder — update with specific tuning services offered.]"
+
+process:
+  - num: "01"
+    title: "Consultation"
+    desc: "We sit down with you to understand your goals, budget, and the regulations you need to meet."
+  - num: "02"
+    title: "Assessment"
+    desc: "We thoroughly inspect your vehicle and develop a detailed build plan with itemised costings."
+  - num: "03"
+    title: "Build"
+    desc: "Our team executes the build with precision, keeping you updated throughout the process."
+  - num: "04"
+    title: "Test & Deliver"
+    desc: "We test and fine-tune until everything is perfect, then hand over a vehicle you can be proud of."

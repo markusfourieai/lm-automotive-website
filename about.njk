@@ -1,0 +1,105 @@
+---
+layout: base.njk
+pageTitle: "About Us"
+pageDesc: "Learn about L&M Automotive Performance — Stellenbosch's trusted performance workshop. Our story, values, and the team behind the workshop."
+activePage: about
+---
+
+<!-- ===================== PAGE HERO ===================== -->
+<section class="page-hero">
+    <div class="container">
+        <span class="label">Who We Are</span>
+        <h1>About L&M Automotive</h1>
+        <p>Driven by passion, built on trust — Stellenbosch's performance workshop of choice.</p>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span class="sep">/</span>
+            <span class="current">About</span>
+        </nav>
+    </div>
+</section>
+
+<!-- ===================== OUR STORY ===================== -->
+<section class="section">
+    <div class="container">
+        <div class="story-grid">
+            <div class="story-text animate">
+                <span class="label">Our Story</span>
+                <h2>{{ about.story_heading }}</h2>
+                <div class="divider divider-left"></div>
+                <p style="margin-top:22px;">{{ about.story_p1 }}</p>
+                <p>{{ about.story_p2 }}</p>
+                <p>{{ about.story_p3 }}</p>
+                <div style="margin-top:32px;">
+                    <a href="/contact/" class="btn btn-red"><i class="fas fa-phone"></i> Get In Touch</a>
+                </div>
+            </div>
+            <div class="animate animate-delay-2">
+                <div class="story-graphic">
+                    <div class="quote-mark">"</div>
+                    <p class="quote-text">{{ about.quote_text }}</p>
+                    <span class="quote-author">— L&M Automotive Performance Team</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== VALUES ===================== -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header animate">
+            <span class="label">What Drives Us</span>
+            <h2>Our Core Values</h2>
+            <div class="divider"></div>
+            <p>These are the principles that guide every job, every interaction, and every decision we make.</p>
+        </div>
+        <div class="values-grid">
+            {% for value in about.values %}
+            {% set delay = (loop.index0 % 4) + 1 %}
+            <div class="value-card animate animate-delay-{{ delay }}">
+                <div class="value-icon"><i class="{{ value.icon }}"></i></div>
+                <h3>{{ value.title }}</h3>
+                <p>{{ value.desc }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- ===================== WHY CHOOSE US ===================== -->
+<section class="section">
+    <div class="container">
+        <div class="section-header animate">
+            <span class="label">Why L&M</span>
+            <h2>Why Choose Us</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="why-grid">
+            {% for item in about.why %}
+            {% set delay = (loop.index0 % 3) + 1 %}
+            <div class="why-card animate animate-delay-{{ delay }}">
+                <h4>
+                    <i class="{{ item.icon }}" style="color:var(--{% if item.color == 'blue' %}blue-light{% else %}red{% endif %}); margin-right:8px;"></i>
+                    {{ item.title }}
+                </h4>
+                <p>{{ item.desc }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<div class="cta-banner">
+    <div class="container">
+        <h2>Ready to Experience the L&M Difference?</h2>
+        <p>Book your vehicle in today and let our experts take care of the rest.</p>
+        <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+            <a href="/contact/" class="btn btn-red"><i class="fas fa-calendar-check"></i> Book a Service</a>
+            <a href="/services/" class="btn btn-outline"><i class="fas fa-list"></i> View Services</a>
+        </div>
+    </div>
+</div>
+
+{% include "infobar.njk" %}

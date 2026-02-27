@@ -1,0 +1,17 @@
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">
+            <img src="/images/logo.jpg" alt="L&M Automotive Performance">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/" class="nav-link{% if activePage == 'home' %} active{% endif %}">Home</a></li>
+            <li><a href="/about/" class="nav-link{% if activePage == 'about' %} active{% endif %}">About</a></li>
+            <li><a href="/services/" class="nav-link{% if activePage == 'services' %} active{% endif %}">Services</a></li>
+            <li><a href="/performance/" class="nav-link{% if activePage == 'performance' %} active{% endif %}">Performance</a></li>
+            <li><a href="/contact/" class="nav-link btn-nav{% if activePage == 'contact' %} active{% endif %}">Contact Us</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>

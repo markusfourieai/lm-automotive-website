@@ -1,0 +1,27 @@
+hero_label: "Stellenbosch's Performance Specialists"
+hero_title_main: "Where Performance"
+hero_title_highlight: "Meets Precision"
+hero_desc: "From everyday servicing to full race preparation, our team of skilled technicians delivers expert automotive care with a passion for performance. Quality workmanship, every time — guaranteed."
+
+stats:
+  - number: "15+"
+    label: "Years Experience"
+  - number: "1200+"
+    label: "Vehicles Serviced"
+  - number: "8"
+    label: "Service Categories"
+  - number: "100%"
+    label: "Satisfaction Guaranteed"
+
+about_title: "Passion for Performance"
+about_text1: "L&M Automotive Performance has been serving the Stellenbosch and surrounding areas for over a decade. Founded on the principles of quality workmanship and honest service, we've grown into the region's most trusted performance workshop."
+about_text2: "Whether you're bringing in your daily driver or your race machine, our team treats every vehicle with the same level of dedication and expertise."
+
+features:
+  - "Highly skilled, experienced technicians"
+  - "Modern diagnostic and workshop equipment"
+  - "Transparent pricing — no hidden costs"
+  - "All vehicle makes and models welcome"
+
+race_title: "Ready to Build Your Race Machine?"
+race_desc: "Our performance and race prepping services are second to none. We build vehicles that perform on the road and dominate on the track."

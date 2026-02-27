@@ -1,0 +1,110 @@
+---
+layout: base.njk
+pageTitle: "Performance"
+pageDesc: "L&M Automotive Performance — race prepping, performance tuning, and motorsport preparation services in Stellenbosch, Western Cape."
+activePage: performance
+---
+
+<!-- ===================== PAGE HERO ===================== -->
+<section class="page-hero">
+    <div class="container">
+        <span class="label">Built For The Track</span>
+        <h1>Performance & Race Prep</h1>
+        <p>From street upgrades to full motorsport builds — we build vehicles that perform.</p>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span class="sep">/</span>
+            <span class="current">Performance</span>
+        </nav>
+    </div>
+</section>
+
+<!-- ===================== INTRO ===================== -->
+<section class="section">
+    <div class="container">
+        <div class="about-split">
+            <div class="about-text animate">
+                <span class="label">Performance Division</span>
+                <h2>Where Street<br>Meets Track</h2>
+                <div class="divider divider-left"></div>
+                <p style="margin-top:22px;">{{ performance.intro_p1 }}</p>
+                <p>{{ performance.intro_p2 }}</p>
+                <p>{{ performance.intro_p3 }}</p>
+                <div style="margin-top:32px;">
+                    <a href="/contact/" class="btn btn-red">
+                        <i class="fas fa-flag-checkered"></i> Start Your Build
+                    </a>
+                </div>
+            </div>
+            <div class="animate animate-delay-2">
+                <div class="about-graphic">
+                    <div class="about-graphic-icon"><i class="fas fa-flag-checkered"></i></div>
+                    <div class="about-graphic-text">Race Ready.<br>Road Legal.</div>
+                    <div class="about-graphic-sub">Performance Builds · Stellenbosch</div>
+                    <div class="about-badge">
+                        <span class="num">✓</span>
+                        <span class="txt">MSA<br>Compliant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== PERFORMANCE SERVICES ===================== -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header animate">
+            <span class="label">What We Offer</span>
+            <h2>Performance Services</h2>
+            <div class="divider"></div>
+            <p>A comprehensive range of performance upgrades and race preparation services, tailored to your goals and budget.</p>
+        </div>
+        <div class="perf-grid">
+            {% for service in performance.services %}
+            {% set delay = (loop.index0 % 3) + 1 %}
+            <div class="perf-card animate animate-delay-{{ delay }}">
+                <div class="perf-card-icon"><i class="{{ service.icon }}"></i></div>
+                <h3>{{ service.title }}</h3>
+                <p>{{ service.desc }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section class="section">
+    <div class="container">
+        <div class="section-header animate">
+            <span class="label">How It Works</span>
+            <h2>Our Build Process</h2>
+            <div class="divider"></div>
+            <p>Every performance build starts with a conversation and ends with a vehicle that exceeds expectations.</p>
+        </div>
+        <div class="process-steps">
+            {% for step in performance.process %}
+            {% set delay = loop.index %}
+            <div class="process-step animate animate-delay-{{ delay }}">
+                <div class="step-num">{{ step.num }}</div>
+                <h4>{{ step.title }}</h4>
+                <p>{{ step.desc }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<div class="cta-banner">
+    <div class="container">
+        <h2>Ready to Build Your Race Machine?</h2>
+        <p>Contact us today to discuss your performance goals. Whether it's your first build or your tenth, we'll make it happen.</p>
+        <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+            <a href="/contact/" class="btn btn-red"><i class="fas fa-flag-checkered"></i> Start Your Build</a>
+            <a href="/services/" class="btn btn-outline"><i class="fas fa-list"></i> View All Services</a>
+        </div>
+    </div>
+</div>
+
+{% include "infobar.njk" %}

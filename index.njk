@@ -1,0 +1,131 @@
+---
+layout: base.njk
+pageTitle: "Home"
+pageDesc: "L&M Automotive Performance — Stellenbosch's premier automotive performance centre. Engine, brakes, exhaust, diagnostics, race prepping and more."
+activePage: home
+---
+
+<!-- ===================== HERO ===================== -->
+<section class="home-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-label">{{ home.hero_label }}</div>
+            <h1 class="hero-title">{{ home.hero_title_main }}<br><span>{{ home.hero_title_highlight }}</span></h1>
+            <p class="hero-subtitle">L&M Automotive Performance</p>
+            <p class="hero-desc">{{ home.hero_desc }}</p>
+            <div class="hero-buttons">
+                <a href="/services/" class="btn btn-red"><i class="fas fa-wrench"></i> Our Services</a>
+                <a href="/contact/" class="btn btn-outline"><i class="fas fa-phone"></i> Get In Touch</a>
+            </div>
+            <div class="hero-info-bar">
+                <div class="hero-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>{{ site.address }}</span>
+                </div>
+                <div class="hero-info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>{{ site.phone }}</span>
+                </div>
+                <div class="hero-info-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon–Thu: {{ site.hours_weekdays }} &nbsp;|&nbsp; Fri: {{ site.hours_friday }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== STATS BAR ===================== -->
+<div class="stats-bar">
+    <div class="container">
+        <div class="stats-grid">
+            {% for stat in home.stats %}
+            <div class="stat-item">
+                <div class="stat-number">{{ stat.number }}</div>
+                <div class="stat-label">{{ stat.label }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- ===================== SERVICES OVERVIEW ===================== -->
+<section class="section">
+    <div class="container">
+        <div class="section-header animate">
+            <span class="label">What We Do</span>
+            <h2>Our Services</h2>
+            <div class="divider"></div>
+            <p>Comprehensive automotive services under one roof — from routine maintenance to high-performance builds.</p>
+        </div>
+        <div class="services-grid">
+            {% for service in services.items %}
+            {% set delay = (loop.index0 % 4) + 1 %}
+            <div class="service-card animate animate-delay-{{ delay }}">
+                <div class="service-icon"><i class="{{ service.icon }}"></i></div>
+                <h3>{{ service.name }}</h3>
+                <p>{{ service.short_desc }}</p>
+                <a href="/services/" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            {% endfor %}
+        </div>
+        <div style="text-align:center; margin-top:48px;" class="animate">
+            <a href="/services/" class="btn btn-outline-red">View All Services <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== ABOUT SNIPPET ===================== -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="about-split">
+            <div class="about-text animate">
+                <span class="label">Who We Are</span>
+                <h2>{{ home.about_title }}</h2>
+                <div class="divider divider-left"></div>
+                <p style="margin-top:20px;">{{ home.about_text1 }}</p>
+                <p>{{ home.about_text2 }}</p>
+                <div class="about-features">
+                    {% for feature in home.features %}
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>{{ feature }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+                <a href="/about/" class="btn btn-red">About Us <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="about-visual animate animate-delay-2">
+                <div class="about-graphic">
+                    <div class="about-graphic-icon"><i class="fas fa-cogs"></i></div>
+                    <div class="about-graphic-text">Built For<br>Performance</div>
+                    <div class="about-graphic-sub">Stellenbosch · South Africa</div>
+                    <div class="about-badge">
+                        <span class="num">15+</span>
+                        <span class="txt">Years<br>Trust</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== RACE CTA ===================== -->
+<section class="section">
+    <div class="container">
+        <div class="race-banner animate">
+            <div>
+                <span style="display:inline-block; font-family:'Oswald',sans-serif; font-size:0.8rem; font-weight:600; letter-spacing:4px; text-transform:uppercase; color:var(--red); margin-bottom:12px;">Track Ready</span>
+                <h2>{{ home.race_title }}</h2>
+                <p style="margin-top:12px; max-width:500px;">{{ home.race_desc }}</p>
+            </div>
+            <div>
+                <a href="/performance/" class="btn btn-red" style="white-space:nowrap;">
+                    <i class="fas fa-flag-checkered"></i> Explore Performance
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "infobar.njk" %}

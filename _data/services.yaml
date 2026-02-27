@@ -1,0 +1,43 @@
+intro_title: "Everything Your Vehicle Needs"
+intro_text: "From routine maintenance to complex performance builds, L&M Automotive Performance is equipped to handle it all. Our workshop combines old-school expertise with modern diagnostic technology."
+
+items:
+  - name: "Engine"
+    icon: "fas fa-cogs"
+    short_desc: "From routine servicing to full engine rebuilds — we keep your engine running at its peak."
+    description: "The engine is the heart of your vehicle — and we treat it that way. Our technicians are experienced in everything from basic oil changes and tune-ups to full engine rebuilds and performance modifications. We work on all engine types, including naturally aspirated, turbocharged, and supercharged units. If your engine is misfiring, losing power, or consuming oil, we'll diagnose the root cause and fix it right the first time."
+
+  - name: "Brakes"
+    icon: "fas fa-circle-stop"
+    short_desc: "Full brake inspections, pad replacements, and complete brake system overhauls for all vehicles."
+    description: "Your brakes are your most critical safety system. We provide comprehensive brake services including pad and shoe replacements, rotor and drum resurfacing or replacement, brake fluid flushes, caliper servicing, and full ABS system diagnostics. Whether you're looking for upgraded performance brakes for track use or simply need a routine brake inspection, our team ensures your stopping power is always at its best."
+
+  - name: "Exhaust"
+    icon: "fas fa-wind"
+    short_desc: "Custom exhaust solutions — repairs, replacements, and performance system installations."
+    description: "Your exhaust system plays a major role in your vehicle's performance, fuel efficiency, and sound. We offer repairs of exhaust leaks, replacement of worn components, and full custom exhaust fabrication for performance applications. Whether you want a subtle upgrade or a full free-flow system, our team has the knowledge and equipment to deliver a quality result that meets your performance goals."
+
+  - name: "Diagnostics"
+    icon: "fas fa-stethoscope"
+    short_desc: "State-of-the-art diagnostic equipment to accurately identify and resolve any vehicle issue."
+    description: "Modern vehicles are complex electronic systems, and accurate diagnosis is the foundation of effective repair. We use state-of-the-art diagnostic equipment to read fault codes, analyse live data, and pinpoint issues across all electronic control units. From engine management faults to ABS, airbag, and transmission issues — we identify the problem fast and give you a clear explanation of what needs to be done."
+
+  - name: "Race Prepping"
+    icon: "fas fa-flag-checkered"
+    short_desc: "Professional race preparation — safety cages, suspension setups, and full track-ready builds."
+    description: "Taking your vehicle to the track? We build race-ready machines from the ground up. Our race prepping services cover everything you need for competitive motorsport — roll cages and safety structures, suspension setup and alignment, weight reduction, fire suppression systems, and full MSA compliance preparation. We work closely with you to understand your class requirements and budget, ensuring your car is both competitive and safe."
+
+  - name: "Electrical"
+    icon: "fas fa-bolt"
+    short_desc: "Wiring repairs to complex electronic diagnostics — our auto electricians handle it all."
+    description: "Automotive electrical faults can be among the most difficult to diagnose — but not for our team. Our trained auto electricians handle everything from simple wiring repairs and battery replacements to complex fault-finding on modern vehicle electronics. We also handle aftermarket installations including alarm systems, audio upgrades, and performance electronics. Electrical gremlins don't stand a chance."
+
+  - name: "Clutch"
+    icon: "fas fa-circle-dot"
+    short_desc: "Expert clutch inspections, repairs, and replacements for all vehicle makes and models."
+    description: "A worn or failing clutch affects your vehicle's performance and safety. We provide expert clutch inspections, adjustments, and full replacements for all vehicle makes and models — including standard road clutches, heavy-duty performance clutches, and competition-spec units. If you're experiencing clutch slip, a high biting point, or a heavy pedal, bring it in and we'll have it sorted quickly and correctly."
+
+  - name: "Cooling System"
+    icon: "fas fa-temperature-low"
+    short_desc: "Radiators, water pumps, thermostats — we keep your engine running cool in all conditions."
+    description: "An overheating engine can cause catastrophic damage in minutes. Our cooling system services include radiator repairs and replacements, water pump servicing, thermostat replacement, coolant flushes, and full pressure testing to locate leaks. We also upgrade cooling systems for performance and high-temperature applications. Keep your engine at the right temperature — trust L&M to keep it cool."
