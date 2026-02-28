@@ -1716,6 +1716,34 @@ p {
     .hero-info-bar { gap: 20px; }
 
     .race-banner { padding: 36px 24px; }
+
+    /* Stats bar spacing */
+    .stats-bar { margin-top: 32px; }
+
+    /* Contact Us burger menu — match other nav links, remove button style */
+    .btn-nav {
+        background: transparent;
+        color: var(--white) !important;
+        padding: 12px 0;
+        border-radius: 0;
+        font-weight: 400;
+        border-bottom: 1px solid var(--dark-border);
+        width: 100%;
+        text-align: left;
+        justify-content: flex-start;
+        box-shadow: none;
+    }
+
+    .btn-nav:hover {
+        background: transparent;
+        box-shadow: none;
+        transform: none;
+        color: var(--red) !important;
+    }
+
+    /* Contact page — form first on mobile */
+    .contact-form-wrap { order: 1; }
+    .contact-info { order: 2; }
 }
 
 @media (max-width: 480px) {
